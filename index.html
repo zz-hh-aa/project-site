@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>zz-hh-aa projects</title>
+    <link rel="stylesheet" href="style.css">
+    <h1>zz-hh-aa projects</h1>
+    <p>this is one of my projects, but here are a few more.</p>
+</header>
+
+<body>
+    <!-- CONTENT -->
+    <div class="flexbox-container">
+    
+        <!-- ITEM 1 BOX-->
+        <div class="flexbox-item">
+            <a href="https://zz-hh-aa.github.io/tribute-site/" target="new">
+                <div class="flexbox-card flexbox-card-1">
+                <p class="flexbox-title">tribute site</p>
+                </div>
+            </a>
+
+            <!-- BUTTON-MODAL 1-->
+            <!-- NEED TO ADD ID= TO BUTTON, DIFFERENTIATE EACH BUTTON, SEE THIS TUTORIAL https://stackoverflow.com/questions/45852125/multiple-modals-with-same-structure-on-one-page -->
+            <button data-modal-target="#modal" class="modal-button" id="modal-button-1" data-element="modal1">More</button>
+            <div class="modal" id="modal1">
+                <div class="modal-header">
+                    project 1 title
+                </div>
+                <div class="modal-body">
+                    project 1 info description
+                </div>
+                <button data-close-button class="close-button" id="close-button-1">&times;</button>
+            </div>
+            <div id="overlay"></div>
+
+        <!-- ITEM 2 -->
+        <div class="flexbox-item flexbox-item-2">
+            <div class="flexbox-item">
+                <a href="https://zz-hh-aa.github.io/tribute-site/" target="new">
+                    <div class="flexbox-card flexbox-card-2">
+                    <p class="flexbox-title">project site</p>
+                    </div>
+                </a>
+    
+                <!-- BUTTON 2-->
+                <button data-modal-target="#modal">More</button>
+                <div class="modal" id="modal2">
+                    <div class="modal-header">
+                        project site
+                    </div>
+                    <div class="modal-body">
+                        project 2 description
+                    </div>
+                    <button data-close-button class="close-button">&times;</button>
+                </div>
+                <div id="overlay"></div>
+        </div>
+    
+        <!-- ITEM 3 -->
+        <div class="flexbox-item flexbox-item-3"></div>
+        <!-- ITEM 4 -->
+        <div class="flexbox-item flexbox-item-4"></div>
+        <!-- ITEM 5 -->
+        <div class="flexbox-item flexbox-item-5"></div>
+        <!-- ITEM 6 -->
+        <div class="flexbox-item flexbox-item-6"></div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
