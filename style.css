@@ -86,20 +86,20 @@ p {
 
 /* BUTTON AND MODAL POPUP*/
 /* MODAL TUTORIAL https://www.youtube.com/watch?v=MBaw_6cPmAw T=9:47 */
-button {
+/* button {
     background-color: blue;
     height: 20px;
     width: 20px;
     align-items: center;
     justify-items: flex-end;
-}
+} */
 
 .description{
     font-size: 10;
     background-color: aquamarine;
 }
 
-.modal{
+/* .modal{
     position:fixed;
     top:50%;
     left:50%;
@@ -114,4 +114,4 @@ button {
 
 .modal.active{
     transform: translate(-50%,-50%) scale(1);
-}
+} */
