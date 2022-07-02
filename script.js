@@ -1,7 +1,7 @@
 function myFunction1() {
     var t1 = document.getElementById("toggle-1");
     if (t1.innerHTML === "") {
-      t1.innerHTML = "project description 1";
+      t1.innerHTML = "Project 1: tribute site to good sign-offs.";
     } else {
       t1.innerHTML = "";
     }
