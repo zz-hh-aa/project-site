@@ -65,23 +65,18 @@ p {
 
 .flexbox-card-3 {
     background-image: url(images/proj_3.png);
-    justify-content: center;
 }
-
 
 .flexbox-card-4 {
     background-image: url(images/proj_4.png);
-    justify-content: center;
 }
 
 .flexbox-card-5 {
     background-image: url(images/proj_5.png);
-    justify-content: center;
 }
 
 .flexbox-card-6 {
     background-image: url(images/proj_6.png);
-    justify-content: center;
 }
 
 /* BUTTON AND MODAL POPUP*/
@@ -112,6 +107,93 @@ button {
     max-width: 50%;
 }
 
-.modal.active{
-    transform: translate(-50%,-50%) scale(1);
+.modal.is-visible {
+    visibility: visible;
 }
+
+/* .modal.active{
+    transform: translate(-50%,-50%) scale(1);
+} */
+
+.modal-header {
+    padding:10px 15px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: blue;
+    font-size: 1.25rem;
+}
+
+.modal-body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.modal-overlay {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 0%, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.3s, opacity 0.3s;
+  }
+
+  .modal.is-visible .modal-overlay {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+  }
+/* #overlay{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    opacity: 0;
+    pointer-events: none;
+}
+
+#overlay.active{
+    opacity: .5;
+    pointer-events: all;
+} */
+/* .pics {
+    max-width: 45%;
+    min-width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    margin-top: 5%;
+
+    table {
+    width: 70%;
+    align-content: center;
+}
+tr {
+    height:20%;
+    width: 70%;
+}
+
+td {
+    padding: 0%;
+    border: 5px;
+    border-color: red; 
+    align-content: center;
+}
+img {
+    max-width: 300px;
+}
+} */
+                

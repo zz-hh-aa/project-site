@@ -1,37 +1,38 @@
 <!DOCTYPE html>
+<!-- CLASSES: flexbox-container; flexbox-item; flexbox-item; flexbox-card (flexbox-card-1); flexbox-title -->
+<!-- CLASSES: modal-1; modal-open; modal-open-1; modal-header; modal-body -->
+<!-- IDs: overlay; -->
 <html>
 <header>
     <title>zz-hh-aa projects</title>
     <link rel="stylesheet" href="style.css">
     <h1>zz-hh-aa projects</h1>
     <p>this is one of my projects, but here are a few more.</p>
+    <script src="script.js" async></script>
+
 </header>
 
 <body>
     <!-- CONTENT -->
     <div class="flexbox-container">
-    
-        <!-- ITEM 1 BOX-->
-        <div class="flexbox-item">
+        <!-- ITEM 1 BOX -->
+        <div class="flexbox-item flexbox-item-1">
             <a href="https://zz-hh-aa.github.io/tribute-site/" target="new">
                 <div class="flexbox-card flexbox-card-1">
                 <p class="flexbox-title">tribute site</p>
                 </div>
             </a>
-
-            <!-- BUTTON-MODAL 1-->
-            <!-- NEED TO ADD ID= TO BUTTON, DIFFERENTIATE EACH BUTTON, SEE THIS TUTORIAL https://stackoverflow.com/questions/45852125/multiple-modals-with-same-structure-on-one-page -->
-            <button data-modal-target="#modal" class="modal-button" id="modal-button-1" data-element="modal1">More</button>
-            <div class="modal" id="modal1">
-                <div class="modal-header">
-                    project 1 title
-                </div>
-                <div class="modal-body">
-                    project 1 info description
-                </div>
-                <button data-close-button class="close-button" id="close-button-1">&times;</button>
+        <!-- BUTTON AND MODAL 1 -->
+        <button data-modal-target="modal-1" class="modal-open modal-open-1" data-element="modal-1"></button>
+            <div class="modal-header">
+                project 1 title
             </div>
-            <div id="overlay"></div>
+            <div class="modal-body">
+                project 1 description
+            </div>
+            <button data-modal-close class="modal-close modal-close-1">&times;</button>
+        </div>
+        <div id="overlay"></div>
 
         <!-- ITEM 2 -->
         <div class="flexbox-item flexbox-item-2">
@@ -41,32 +42,44 @@
                     <p class="flexbox-title">project site</p>
                     </div>
                 </a>
-    
-                <!-- BUTTON 2-->
-                <button data-modal-target="#modal">More</button>
-                <div class="modal" id="modal2">
-                    <div class="modal-header">
-                        project site
-                    </div>
-                    <div class="modal-body">
-                        project 2 description
-                    </div>
-                    <button data-close-button class="close-button">&times;</button>
-                </div>
-                <div id="overlay"></div>
+            </div>
         </div>
-    
         <!-- ITEM 3 -->
         <div class="flexbox-item flexbox-item-3"></div>
+            <div class="flexbox-item">
+                <a href="https://zz-hh-aa.github.io/tribute-site/" target="new">
+                    <div class="flexbox-card flexbox-card-3">
+                    <p class="flexbox-title">project site</p>
+                    </div>
+                </a>
+            </div>
         <!-- ITEM 4 -->
         <div class="flexbox-item flexbox-item-4"></div>
+            <div class="flexbox-item">
+                <a href="https://zz-hh-aa.github.io/tribute-site/" target="new">
+                    <div class="flexbox-card flexbox-card-4">
+                    <p class="flexbox-title">project site</p>
+                    </div>
+                </a>
+            </div>
         <!-- ITEM 5 -->
         <div class="flexbox-item flexbox-item-5"></div>
+            <div class="flexbox-item">
+                <a href="https://zz-hh-aa.github.io/tribute-site/" target="new">
+                    <div class="flexbox-card flexbox-card-5">
+                    <p class="flexbox-title">project site</p>
+                    </div>
+                </a>
+            </div>
         <!-- ITEM 6 -->
-        <div class="flexbox-item flexbox-item-6"></div>
+        <div class="flexbox-item flexbox-item-6">
+            <div class="flexbox-item">
+                <a href="https://zz-hh-aa.github.io/tribute-site/" target="new">
+                    <div class="flexbox-card flexbox-card-6">
+                    <p class="flexbox-title">project site</p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
 </body>
-
-<script src="script.js"></script>
-
-</html>
