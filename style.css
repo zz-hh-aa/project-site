@@ -2,60 +2,77 @@
 
 body {
     background-color: rgb(255, 255, 255);
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 5%;
     text-align: left;
+    margin-bottom: 5%;
 }
 h1 {
     color:rgb(0, 0, 0);
     font-size:300;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
     text-align: left;
-    text-justify: left;
     margin-top: 5%;
     margin-bottom:5%;
 }
 p {
     color:rgb(0, 0, 0);
     font: 100px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: left;
-    padding:2%;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* FLEXBOX & IMAGES */
 .flexbox-container {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: aqua;
+    justify-self: center;
 }
 
 .flexbox-item {
-    width: 500px;
-    height:fit-content;
+    /* height:fit-content; */
+    width:25%;
+    /* justify-self: start;
+    align-self:flex-start; */
 }
 .flexbox-title {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     text-justify: center;
-}
-
-.flexbox-item-1 {
-    align-content: flex-start;
+    padding-top: 40%;
+    color:rgb(0, 0, 0);
+    font-style: none;
 }
 
 .flexbox-card{
     width: 250px;
     height: 250px;
-    margin: 25px;
-    border: 0px;
+    margin: 0;
+    border: 10%;
 }
+
+.flexbox-item-1 {
+    align-content: flex-start;
+    background-color: yellow;
+}
+
 .flexbox-card-1{
     background-image: url(images/proj_1.png);
     background-size: cover;
+    /* justify-content: center;
+    justify-self: center; */
+}
+
+.flexbox-item-2 {
     align-content: flex-start;
-    justify-content: center;
+    background-color: orange;
 }
 
 .flexbox-card-2 {
@@ -63,15 +80,29 @@ p {
     justify-content: center;
 }
 
+.flexbox-item-3 {
+    align-content: flex-start;
+    background-color: red;
+}
+
 .flexbox-card-3 {
     background-image: url(images/proj_3.png);
     justify-content: center;
 }
 
+.flexbox-item-4 {
+    align-content: flex-start;
+    background-color: rgb(0, 255, 51);
+}
 
 .flexbox-card-4 {
     background-image: url(images/proj_4.png);
     justify-content: center;
+}
+
+.flexbox-item-5 {
+    align-content: flex-start;
+    background-color: rgb(0, 55, 255);
 }
 
 .flexbox-card-5 {
@@ -79,39 +110,31 @@ p {
     justify-content: center;
 }
 
+.flexbox-item-6 {
+    align-content: flex-start;
+    background-color: rgb(187, 0, 255);
+}
+
 .flexbox-card-6 {
     background-image: url(images/proj_6.png);
     justify-content: center;
 }
 
-/* BUTTON AND MODAL POPUP*/
-/* MODAL TUTORIAL https://www.youtube.com/watch?v=MBaw_6cPmAw T=9:47 */
-/* button {
-    background-color: blue;
-    height: 20px;
-    width: 20px;
-    align-items: center;
-    justify-items: flex-end;
-} */
-
-.description{
-    font-size: 10;
-    background-color: aquamarine;
+button {
+    background-color: white;
+    border: 1px black;
+    border-style: solid;
+    /* justify-self: auto;  */
+    /* align-self:center;    */
+    justify-self: center;
+    height:20px;
+    margin:20px;
 }
 
-/* .modal{
-    position:fixed;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%) scale(0);
-    border: 1px solid black;
-    border-radius: 1px;
-    z-index: 10;
-    background-color: chartreuse;
-    width:300px;
-    max-width: 50%;
+.toggle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    height: 50px;
+    margin:auto;
+    padding-left: 10%;
 }
-
-.modal.active{
-    transform: translate(-50%,-50%) scale(1);
-} */
